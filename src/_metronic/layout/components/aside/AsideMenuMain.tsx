@@ -27,11 +27,7 @@ export function AsideMenuMain() {
           hasBullet={true}
           title='Cycle Details'
         />
-        <AsideMenuItem
-          to='production/entries/cycle-grade'
-          hasBullet={true}
-          title='Cycle Grade'
-        />
+        <AsideMenuItem to='production/entries/cycle-grade' hasBullet={true} title='Cycle Grade' />
         <AsideMenuItem
           to='production/entries/planned-output'
           hasBullet={true}
@@ -49,53 +45,6 @@ export function AsideMenuMain() {
       </AsideMenuItemWithSub>
       <AsideMenuItemWithSub
         to='#'
-        title='Setup'
-        fontIcon='bi-archive'
-        icon='/media/icons/duotune/general/gen031.svg'
-      >
-        <AsideMenuItem
-          to='#'
-          title='Loader'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='#'
-          title='Hauler'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='#'
-          title='Mine Area'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='#'
-          title='Origin'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='#'
-          title='Destination'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='#'
-          title='Material'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='#'
-          title='Activity'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='#'
-          title='Shift'
-          hasBullet={true}
-        />
-      </AsideMenuItemWithSub>
-      <AsideMenuItemWithSub
-        to='#'
         title='Report'
         fontIcon='bi-archive'
         icon='/media/icons/duotune/general/gen028.svg'
@@ -105,16 +54,109 @@ export function AsideMenuMain() {
           title='Production'
           hasBullet={true}
         />
+        <AsideMenuItem to='production/report/fuel-report' title='Fuel Report' hasBullet={true} />
         <AsideMenuItem
-          to='production/report/fuel-report'
-          title='Fuel Report'
-          hasBullet={true}
-        />
-        <AsideMenuItem
-          to='production/report/production-kpi'
+          to='production/report/equipment-kpi'
           title='Equipment KPI'
           hasBullet={true}
         />
+        <AsideMenuItem
+          to='production/report/activity-statistics'
+          title='Activity Statistics'
+          hasBullet={true}
+        />
+      </AsideMenuItemWithSub>
+      <AsideMenuItemWithSub
+        to='#'
+        title='Setup'
+        fontIcon='bi-archive'
+        icon='/media/icons/duotune/coding/cod009.svg'
+      >
+        <AsideMenuItemWithSub to='#' title='Loader' hasBullet={true}>
+          <AsideMenuItemWithSub to='/production/setup/loader/unit' title='Unit' hasBullet={true}>
+            <AsideMenuItem
+              to='/production/setup/loader/unit/srvs-mng'
+              title='Service Manager'
+              hasBullet={true}
+            />
+            <AsideMenuItem
+              to='/production/setup/loader/unit/equipment'
+              title='Equipment'
+              hasBullet={true}
+            />
+          </AsideMenuItemWithSub>
+          <AsideMenuItemWithSub
+            to='/production/setup/loader/Operator'
+            title='Operator'
+            hasBullet={true}
+          >
+            <AsideMenuItem
+              to='/production/setup/loader/operator/srvs-mng'
+              title='Service Manager'
+              hasBullet={true}
+            />
+            <AsideMenuItem
+              to='/production/setup/loader/operator/employee'
+              title='Employee'
+              hasBullet={true}
+            />
+          </AsideMenuItemWithSub>
+        </AsideMenuItemWithSub>
+        <AsideMenuItemWithSub to='#' title='Hauler' hasBullet={true}>
+          <AsideMenuItemWithSub to='#' title='Unit' hasBullet={true}>
+            <AsideMenuItem
+              to='/production/setup/hauler/unit/srvs-mng'
+              title='Service Manager'
+              hasBullet={true}
+            />
+            <AsideMenuItem
+                to='/production/setup/hauler/unit/equipment'
+                title='Equipment'
+                hasBullet={true}
+            />
+          </AsideMenuItemWithSub>
+          <AsideMenuItemWithSub to='#' title='Operator' hasBullet={true}>
+            <AsideMenuItem
+                to='/production/setup/hauler/operator/srvs-mng'
+                title='Service Manager'
+                hasBullet={true}
+            />
+            <AsideMenuItem
+                to='/production/setup/hauler/operator/employee'
+                title='Employee'
+                hasBullet={true}
+            />
+          </AsideMenuItemWithSub>
+        </AsideMenuItemWithSub>
+        <AsideMenuItem to='/production/setup/mine-area' title='Mine Area' hasBullet={true} />
+        <AsideMenuItemWithSub to='#' title='Origin' hasBullet={true}>
+            <AsideMenuItem to='/production/setup/origin/inv-ctrl' title='Inventory Control' hasBullet={true} />
+            <AsideMenuItem to='/production/setup/origin/loc' title='Location' hasBullet={true} />
+        </AsideMenuItemWithSub>
+        <AsideMenuItemWithSub to='#' title='Destination' hasBullet={true}>
+          <AsideMenuItem to='/production/setup/dest/inv-ctrl' title='Inventory Control' hasBullet={true} />
+          <AsideMenuItem to='/production/setup/dest/loc' title='Location' hasBullet={true} />
+        </AsideMenuItemWithSub>
+        <AsideMenuItemWithSub to='#' title='Material' hasBullet={true}>
+          <AsideMenuItemWithSub to='#' title='Raw' hasBullet={true}>
+            <AsideMenuItem to='/production/setup/raw/inv-ctrl' title='Inventory Control' hasBullet={true} />
+            <AsideMenuItem to='/production/setup/raw/item' title='Item' hasBullet={true} />
+          </AsideMenuItemWithSub>
+          <AsideMenuItemWithSub to='#' title='Processed' hasBullet={true}>
+            <AsideMenuItem to='/production/setup/processed/inv-ctrl' title='Inventory Control' hasBullet={true} />
+            <AsideMenuItem to='/production/setup/processed/item' title='Item' hasBullet={true} />
+          </AsideMenuItemWithSub>
+        </AsideMenuItemWithSub>
+        <AsideMenuItem to='/production/setup/activity' title='Activity' hasBullet={true} />
+        <AsideMenuItem to='/production/setup/shift' title='Shift' hasBullet={true} />
+      </AsideMenuItemWithSub>
+      <AsideMenuItemWithSub
+        to='#'
+        title='Configuration'
+        fontIcon='bi-archive'
+        icon='/media/icons/duotune/general/gen055.svg'
+      >
+        <AsideMenuItem to='#' title='Edit' hasBullet={true} />
       </AsideMenuItemWithSub>
       {/*<AsideMenuItemWithSub*/}
       {/*  to='/crafted/accounts'*/}

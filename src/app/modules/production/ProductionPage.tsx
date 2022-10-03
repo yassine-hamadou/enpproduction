@@ -8,6 +8,9 @@ import {ProductionReportTable} from "./components/tables/report/ProductionReport
 import {FuelReportTable} from "./components/tables/report/FuelReportTable";
 import {EquipmentTable} from "./components/tables/report/EquipmentTable";
 import {StatisticsTable} from "./components/tables/report/StatisticsTable";
+import {MineAreaTable} from "./components/tables/setup/MineAreaTable";
+import {HaulerTable} from "./components/tables/setup/HaulerTable";
+import {LoaderTable} from "./components/tables/setup/LoaderTable";
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
@@ -82,26 +85,26 @@ const ProductionPage: React.FC = () => {
         }
       >
         <Route
-          path='cycle-details'
+          path='loader'
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
               {/*<Overview />*/}
-              <CycleDetailsTable className='mb-5 mb-xl-8' />
+              <LoaderTable className='mb-5 mb-xl-8' />
             </>
           }
         />
         <Route
-          path='cycle-grade'
+          path='hauler'
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Cycle Grade</PageTitle>
-              <CycleGradeTable className='mb-5 mb-xl-8' />
+              <HaulerTable className='mb-5 mb-xl-8' />
             </>
           }
         />
         <Route
-          path='planned-output'
+          path='mine-area'
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Planned Output</PageTitle>
@@ -134,7 +137,7 @@ const ProductionPage: React.FC = () => {
           path='fuel-report'
           element={
             <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Cycle Grade</PageTitle>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Fuel Report</PageTitle>
               <FuelReportTable className='mb-5 mb-xl-8' />
             </>
           }
@@ -143,7 +146,7 @@ const ProductionPage: React.FC = () => {
           path='equipment-kpi'
           element={
             <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Planned Output</PageTitle>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Equipment KPI</PageTitle>
               <EquipmentTable className='mb-5 mb-xl-8' />
             </>
           }
@@ -152,7 +155,7 @@ const ProductionPage: React.FC = () => {
           path='activity-statistics'
           element={
             <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Planned Output</PageTitle>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Activity Statistics</PageTitle>
               <StatisticsTable className='mb-5 mb-xl-8' />
             </>
           }

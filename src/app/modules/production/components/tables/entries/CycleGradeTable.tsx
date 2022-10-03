@@ -31,15 +31,15 @@ const CycleGradeTable: React.FC<Props> = ({className}) => {
       </div>
       {/* end::Header */}
       {/* begin::Body */}
-      <div className='card-body py-3'>
+      <div className='card-body py-0'>
         {/* begin::Table container */}
         <div className='table-responsive'>
           {/* begin::Table */}
-          <table className='table align-middle gs-0 gy-4'>
+          <table className='table table-row-bordered align-middle gs-0 gy-0'>
             {/* begin::Table head */}
             <thead>
-            <tr className='fw-bold text-muted bg-light'>
-              <th className='ps-4 min-w-325px rounded-start'>Date</th>
+            <tr className='fw-bold bg-light'>
+              <th className='min-w-325px rounded-start'>Date</th>
               <th className='min-w-125px'>Shift</th>
               <th className='min-w-200px'>Loader</th>
               <th className='min-w-150px'>Hauler</th>
@@ -54,40 +54,33 @@ const CycleGradeTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
+                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary mb-1 fs-6'>
+                      In Development
                     </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
+                    {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>*/}
+                    {/*    C#, ASP.NET, MS SQL*/}
+                    {/*  </span>*/}
                   </div>
                 </div>
               </td>
               <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
+                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary d-block mb-1 fs-6'>
                   $4,790
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   $240
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   Chris Thompson
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>*/}
               </td>
               <td>
                 <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
@@ -116,40 +109,33 @@ const CycleGradeTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
+                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary mb-1 fs-6'>
+                      In Development
                     </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
+                    {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>*/}
+                    {/*    C#, ASP.NET, MS SQL*/}
+                    {/*  </span>*/}
                   </div>
                 </div>
               </td>
               <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
+                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary d-block mb-1 fs-6'>
                   $4,790
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   $240
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   Chris Thompson
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>*/}
               </td>
               <td>
                 <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
@@ -178,40 +164,33 @@ const CycleGradeTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
+                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary mb-1 fs-6'>
+                      In Development
                     </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
+                    {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>*/}
+                    {/*    C#, ASP.NET, MS SQL*/}
+                    {/*  </span>*/}
                   </div>
                 </div>
               </td>
               <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
+                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary d-block mb-1 fs-6'>
                   $4,790
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   $240
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   Chris Thompson
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>*/}
               </td>
               <td>
                 <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
@@ -240,40 +219,33 @@ const CycleGradeTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
+                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary mb-1 fs-6'>
+                      In Development
                     </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
+                    {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>*/}
+                    {/*    C#, ASP.NET, MS SQL*/}
+                    {/*  </span>*/}
                   </div>
                 </div>
               </td>
               <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
+                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary d-block mb-1 fs-6'>
                   $4,790
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   $240
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   Chris Thompson
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>*/}
               </td>
               <td>
                 <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
@@ -302,226 +274,33 @@ const CycleGradeTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
+                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary mb-1 fs-6'>
+                      In Development
                     </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
+                    {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>*/}
+                    {/*    C#, ASP.NET, MS SQL*/}
+                    {/*  </span>*/}
                   </div>
                 </div>
               </td>
               <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
+                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark text-hover-primary d-block mb-1 fs-6'>
                   $4,790
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   $240
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>*/}
               </td>
               <td>
                 <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
                   Chris Thompson
                 </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
-              </td>
-              <td>
-                <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
-              </td>
-              <td>
-                <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
-              </td>
-              <td>
-                <a
-                  href='src/app/modules/production/components/tables/entries/CycleDetailsTable#'
-                  className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                >
-                  <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                </a>
-                <a
-                  href='src/app/modules/production/components/tables/entries/CycleDetailsTable#'
-                  className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                >
-                  <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                </a>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                  <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
-                  <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
-                    </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  $4,790
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  $240
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  Chris Thompson
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
-              </td>
-              <td>
-                <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
-              </td>
-              <td>
-                <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
-              </td>
-              <td>
-                <a
-                  href='src/app/modules/production/components/tables/entries/CycleDetailsTable#'
-                  className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                >
-                  <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                </a>
-                <a
-                  href='src/app/modules/production/components/tables/entries/CycleDetailsTable#'
-                  className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                >
-                  <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                </a>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                  <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
-                  <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
-                    </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  $4,790
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  $240
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  Chris Thompson
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
-              </td>
-              <td>
-                <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
-              </td>
-              <td>
-                <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>
-              </td>
-              <td>
-                <a
-                  href='src/app/modules/production/components/tables/entries/CycleDetailsTable#'
-                  className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                >
-                  <KTSVG path='/media/icons/duotune/general/gen019.svg' className='svg-icon-3' />
-                </a>
-                <a
-                  href='src/app/modules/production/components/tables/entries/CycleDetailsTable#'
-                  className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1'
-                >
-                  <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
-                </a>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                  <KTSVG path='/media/icons/duotune/general/gen027.svg' className='svg-icon-3' />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
-                  <div className='d-flex justify-content-start flex-column'>
-                    <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                      Telegram Development
-                    </a>
-                    <span className='text-muted fw-semibold text-muted d-block fs-7'>
-                        C#, ASP.NET, MS SQL
-                      </span>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  $4,790
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Paid</span>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  $240
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>Rejected</span>
-              </td>
-              <td>
-                <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-6'>
-                  Chris Thompson
-                </a>
-                <span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>
+                {/*<span className='text-muted fw-semibold text-muted d-block fs-7'>NBA Player</span>*/}
               </td>
               <td>
                 <span className='badge badge-light-danger fs-7 fw-semibold'>In Progress</span>

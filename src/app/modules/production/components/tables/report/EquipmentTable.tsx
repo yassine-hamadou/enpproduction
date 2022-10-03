@@ -118,7 +118,7 @@ const EquipmentTable: React.FC<Props> = ({className}) => {
                 <div className='d-flex align-items-center'>
                   <div className='symbol symbol-50px me-5'>
                     <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
+                      src={toAbsoluteUrl('/media/stock/600x400/img-7.jpg')}
                       className=''
                       alt=''
                     />
@@ -180,7 +180,7 @@ const EquipmentTable: React.FC<Props> = ({className}) => {
                 <div className='d-flex align-items-center'>
                   <div className='symbol symbol-50px me-5'>
                     <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
+                      src={toAbsoluteUrl('/media/stock/600x400/img-7.jpg')}
                       className=''
                       alt=''
                     />
@@ -242,7 +242,7 @@ const EquipmentTable: React.FC<Props> = ({className}) => {
                 <div className='d-flex align-items-center'>
                   <div className='symbol symbol-50px me-5'>
                     <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
+                      src={toAbsoluteUrl('/media/stock/600x400/img-7.jpg')}
                       className=''
                       alt=''
                     />
@@ -304,7 +304,7 @@ const EquipmentTable: React.FC<Props> = ({className}) => {
                 <div className='d-flex align-items-center'>
                   <div className='symbol symbol-50px me-5'>
                     <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
+                      src={toAbsoluteUrl('/media/stock/600x400/img-7.jpg')}
                       className=''
                       alt=''
                     />
@@ -366,7 +366,7 @@ const EquipmentTable: React.FC<Props> = ({className}) => {
                 <div className='d-flex align-items-center'>
                   <div className='symbol symbol-50px me-5'>
                     <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
+                      src={toAbsoluteUrl('/media/stock/600x400/img-7.jpg')}
                       className=''
                       alt=''
                     />
@@ -428,7 +428,7 @@ const EquipmentTable: React.FC<Props> = ({className}) => {
                 <div className='d-flex align-items-center'>
                   <div className='symbol symbol-50px me-5'>
                     <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
+                      src={toAbsoluteUrl('/media/stock/600x400/img-7.jpg')}
                       className=''
                       alt=''
                     />
@@ -490,7 +490,7 @@ const EquipmentTable: React.FC<Props> = ({className}) => {
                 <div className='d-flex align-items-center'>
                   <div className='symbol symbol-50px me-5'>
                     <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-5.jpg')}
+                      src={toAbsoluteUrl('/media/stock/600x400/img-7.jpg')}
                       className=''
                       alt=''
                     />
