@@ -23,17 +23,17 @@ export function AsideMenuMain() {
         icon='/media/icons/duotune/general/gen022.svg'
       >
         <AsideMenuItem
-          to='#'
+          to='production/entries/cycle-details'
           hasBullet={true}
           title='Cycle Details'
         />
         <AsideMenuItem
-          to='#'
+          to='production/entries/cycle-grade'
           hasBullet={true}
           title='Cycle Grade'
         />
         <AsideMenuItem
-          to='#'
+          to='production/entries/planned-output'
           hasBullet={true}
           title='Planned Output'
         />
@@ -101,17 +101,17 @@ export function AsideMenuMain() {
         icon='/media/icons/duotune/general/gen028.svg'
       >
         <AsideMenuItem
-          to='#'
+          to='production/report/production-report'
           title='Production'
           hasBullet={true}
         />
         <AsideMenuItem
-          to='#'
+          to='production/report/fuel-report'
           title='Fuel Report'
           hasBullet={true}
         />
         <AsideMenuItem
-          to='#'
+          to='production/report/production-kpi'
           title='Equipment KPI'
           hasBullet={true}
         />

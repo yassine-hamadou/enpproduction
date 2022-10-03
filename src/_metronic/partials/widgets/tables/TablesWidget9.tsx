@@ -11,16 +11,16 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
-        <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold fs-3 mb-1'>Members Statistics</span>
-          <span className='text-muted mt-1 fw-semibold fs-7'>Over 500 members</span>
-        </h3>
+        {/*<h3 className='card-title align-items-start flex-column'>*/}
+        {/*  <span className='card-label fw-bold fs-3 mb-1'>Cycle details table</span>*/}
+        {/*  /!*<span className='text-muted mt-1 fw-semibold fs-7'>Over 500 members</span>*!/*/}
+        {/*</h3>*/}
         <div
           className='card-toolbar'
           data-bs-toggle='tooltip'
           data-bs-placement='top'
           data-bs-trigger='hover'
-          title='Click to add a user'
+          title='Click to add details'
         >
           <a
             href='#'
@@ -29,7 +29,24 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
             data-bs-target='#kt_modal_invite_friends'
           >
             <KTSVG path='/media/icons/duotune/arrows/arr075.svg' className='svg-icon-3' />
-            New Member
+            Add
+          </a>
+        </div>
+        <div
+          className='card-toolbar'
+          data-bs-toggle='tooltip'
+          data-bs-placement='top'
+          data-bs-trigger='hover'
+          title='Click to upload details'
+        >
+          <a
+            href='#'
+            className='btn btn-sm btn-light-primary'
+            data-bs-toggle='modal'
+            data-bs-target='#kt_modal_invite_friends'
+          >
+            <KTSVG path='/media/icons/duotune/arrows/arr078.svg' className='svg-icon-3' />
+            Upload
           </a>
         </div>
       </div>
@@ -54,9 +71,9 @@ const TablesWidget9: React.FC<Props> = ({className}) => {
                     />
                   </div>
                 </th>
-                <th className='min-w-150px'>Authors</th>
-                <th className='min-w-140px'>Company</th>
-                <th className='min-w-120px'>Progress</th>
+                <th className='min-w-150px'>Date</th>
+                <th className='min-w-140px'>Shift</th>
+                <th className='min-w-120px'>Time</th>
                 <th className='min-w-100px text-end'>Actions</th>
               </tr>
             </thead>
