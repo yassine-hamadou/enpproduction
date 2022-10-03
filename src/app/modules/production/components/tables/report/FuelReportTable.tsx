@@ -35,7 +35,7 @@ const FuelReportTable: React.FC<Props> = ({className}) => {
         {/* begin::Table container */}
         <div className='table-responsive'>
           {/* begin::Table */}
-          <table className='table align-middle gs-0 gy-4'>
+          <table className='table align-middle gs-0 table-row-bordered gy-0'>
             {/* begin::Table head */}
             <thead>
             <tr className='fw-bold text-muted bg-light'>
@@ -54,13 +54,6 @@ const FuelReportTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-8.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
                     <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
                       Telegram Development
@@ -116,13 +109,6 @@ const FuelReportTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-8.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
                     <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
                       Telegram Development
@@ -178,13 +164,6 @@ const FuelReportTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-8.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
                     <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
                       Telegram Development
@@ -240,13 +219,6 @@ const FuelReportTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-8.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
                     <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
                       Telegram Development
@@ -302,13 +274,6 @@ const FuelReportTable: React.FC<Props> = ({className}) => {
             <tr>
               <td>
                 <div className='d-flex align-items-center'>
-                  <div className='symbol symbol-50px me-5'>
-                    <img
-                      src={toAbsoluteUrl('/media/stock/600x400/img-8.jpg')}
-                      className=''
-                      alt=''
-                    />
-                  </div>
                   <div className='d-flex justify-content-start flex-column'>
                     <a href='src/app/modules/production/components/tables/entries/CycleDetailsTable#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
                       Telegram Development
