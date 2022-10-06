@@ -73,79 +73,21 @@ export function AsideMenuMain() {
         icon='/media/icons/duotune/coding/cod009.svg'
       >
         <AsideMenuItemWithSub to='#' title='Loader' hasBullet={true}>
-          <AsideMenuItemWithSub to='/production/setup/loader/unit' title='Unit' hasBullet={true}>
-            <AsideMenuItem
-              to='/production/setup/loader/unit/srvs-mng'
-              title='Service Manager'
-              hasBullet={true}
-            />
-            <AsideMenuItem
-              to='/production/setup/loader/unit/equipment'
-              title='Equipment'
-              hasBullet={true}
-            />
-          </AsideMenuItemWithSub>
-          <AsideMenuItemWithSub
-            to='/production/setup/loader/Operator'
-            title='Operator'
-            hasBullet={true}
-          >
-            <AsideMenuItem
-              to='/production/setup/loader/operator/srvs-mng'
-              title='Service Manager'
-              hasBullet={true}
-            />
-            <AsideMenuItem
-              to='/production/setup/loader/operator/employee'
-              title='Employee'
-              hasBullet={true}
-            />
-          </AsideMenuItemWithSub>
+          <AsideMenuItem to='/production/setup/loader/unit' title='Unit' hasBullet={true} />
+          <AsideMenuItem to='/production/setup/loader/operator' title='Operator' hasBullet={true} />
+
+
         </AsideMenuItemWithSub>
         <AsideMenuItemWithSub to='#' title='Hauler' hasBullet={true}>
-          <AsideMenuItemWithSub to='#' title='Unit' hasBullet={true}>
-            <AsideMenuItem
-              to='/production/setup/hauler/unit/srvs-mng'
-              title='Service Manager'
-              hasBullet={true}
-            />
-            <AsideMenuItem
-                to='/production/setup/hauler/unit/equipment'
-                title='Equipment'
-                hasBullet={true}
-            />
-          </AsideMenuItemWithSub>
-          <AsideMenuItemWithSub to='#' title='Operator' hasBullet={true}>
-            <AsideMenuItem
-                to='/production/setup/hauler/operator/srvs-mng'
-                title='Service Manager'
-                hasBullet={true}
-            />
-            <AsideMenuItem
-                to='/production/setup/hauler/operator/employee'
-                title='Employee'
-                hasBullet={true}
-            />
-          </AsideMenuItemWithSub>
+          <AsideMenuItem to='/production/setup/hauler/unit' title='Unit' hasBullet={true} />
+          <AsideMenuItem to='/production/setup/hauler/operator' title='Operator' hasBullet={true} />
         </AsideMenuItemWithSub>
         <AsideMenuItem to='/production/setup/mine-area' title='Mine Area' hasBullet={true} />
-        <AsideMenuItemWithSub to='#' title='Origin' hasBullet={true}>
-            <AsideMenuItem to='/production/setup/origin/inv-ctrl' title='Inventory Control' hasBullet={true} />
-            <AsideMenuItem to='/production/setup/origin/loc' title='Location' hasBullet={true} />
-        </AsideMenuItemWithSub>
-        <AsideMenuItemWithSub to='#' title='Destination' hasBullet={true}>
-          <AsideMenuItem to='/production/setup/dest/inv-ctrl' title='Inventory Control' hasBullet={true} />
-          <AsideMenuItem to='/production/setup/dest/loc' title='Location' hasBullet={true} />
-        </AsideMenuItemWithSub>
+        <AsideMenuItem to='/production/setup/origin' title='Origin' hasBullet={true} />
+        <AsideMenuItem to='/production/setup/destination' title='Destination' hasBullet={true} />
         <AsideMenuItemWithSub to='#' title='Material' hasBullet={true}>
-          <AsideMenuItemWithSub to='#' title='Raw' hasBullet={true}>
-            <AsideMenuItem to='/production/setup/raw/inv-ctrl' title='Inventory Control' hasBullet={true} />
-            <AsideMenuItem to='/production/setup/raw/item' title='Item' hasBullet={true} />
-          </AsideMenuItemWithSub>
-          <AsideMenuItemWithSub to='#' title='Processed' hasBullet={true}>
-            <AsideMenuItem to='/production/setup/processed/inv-ctrl' title='Inventory Control' hasBullet={true} />
-            <AsideMenuItem to='/production/setup/processed/item' title='Item' hasBullet={true} />
-          </AsideMenuItemWithSub>
+          <AsideMenuItem to='/production/setup/raw' title='Raw' hasBullet={true} />
+          <AsideMenuItem to='/production/setup/processed' title='Processed' hasBullet={true} />
         </AsideMenuItemWithSub>
         <AsideMenuItem to='/production/setup/activity' title='Activity' hasBullet={true} />
         <AsideMenuItem to='/production/setup/shift' title='Shift' hasBullet={true} />

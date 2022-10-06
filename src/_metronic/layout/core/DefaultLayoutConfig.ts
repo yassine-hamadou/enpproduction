@@ -8,7 +8,7 @@ export const DefaultLayoutConfig: ILayout = {
   },
   loader: {
     display: true,
-    type: 'default', // Set default|spinner-message|spinner-logo to hide or show page loader
+    type: 'default', // Set default|spinner-message|spinner-logo to hide or show page unit
   },
   scrolltop: {
     display: true,

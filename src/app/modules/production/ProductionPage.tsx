@@ -1,33 +1,32 @@
 import React from 'react'
 import {Navigate, Route, Routes, Outlet} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
-import {CycleDetailsTable} from "./components/tables/entries/CycleDetailsTable";
-import {CycleGradeTable} from "./components/tables/entries/CycleGradeTable";
-import {PlannedOutputTable} from "./components/tables/entries/PlannedOutputTable";
-import {ProductionReportTable} from "./components/tables/report/ProductionReportTable";
-import {FuelReportTable} from "./components/tables/report/FuelReportTable";
-import {EquipmentTable} from "./components/tables/report/EquipmentTable";
-import {StatisticsTable} from "./components/tables/report/StatisticsTable";
-import {MineAreaTable} from "./components/tables/setup/MineAreaTable";
+import {CycleDetailsWrapper} from './components/entries/cycle_details/CycleDetailsList'
 import {HaulerTable} from "./components/tables/setup/HaulerTable";
 import {LoaderTable} from "./components/tables/setup/LoaderTable";
+import {CycleGradeWrapper} from "./components/entries/cycle_grades/CycleDetailsList";
+import {PlannedOutputTable} from "./components/entries/planned_output/CycleDetailsList";
+import {ProductionReportTable} from "./components/report/production_table/CycleDetailsList";
+import {FuelReportTable} from "./components/report/fuel/CycleDetailsList";
+import {EquipmentTable} from "./components/report/equipment/CycleDetailsList";
+import {StatisticsTable} from "./components/report/activity/CycleDetailsList";
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
     title: 'Cycle Details',
-    path: '/entries/cycle-details',
+    path: '/cycle_details/cycle-details',
     isSeparator: false,
     isActive: false,
   },
   {
     title: 'Cycle Grade',
-    path: '/entries/cycle-grade',
+    path: '/cycle_details/cycle-grade',
     isSeparator: true,
     isActive: false,
   },
   {
     title: 'Planned Output',
-    path: '/entries/planned-output',
+    path: '/cycle_details/planned-output',
     isSeparator: true,
     isActive: false,
   },
@@ -49,9 +48,9 @@ const ProductionPage: React.FC = () => {
           path='cycle-details'
           element={
             <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Cycle Details</PageTitle>
               {/*<Overview />*/}
-              <CycleDetailsTable className='mb-5 mb-xl-8' />
+              <CycleDetailsWrapper />
             </>
           }
         />
@@ -60,7 +59,7 @@ const ProductionPage: React.FC = () => {
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Cycle Grade</PageTitle>
-              <CycleGradeTable className='mb-5 mb-xl-8' />
+              <CycleGradeWrapper />
             </>
           }
         />
@@ -69,7 +68,7 @@ const ProductionPage: React.FC = () => {
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Planned Output</PageTitle>
-              <PlannedOutputTable className='mb-5 mb-xl-8' />
+              <PlannedOutputTable />
             </>
           }
         />
@@ -108,7 +107,7 @@ const ProductionPage: React.FC = () => {
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Planned Output</PageTitle>
-              <PlannedOutputTable className='mb-5 mb-xl-8' />
+              {/*<PlannedOutputTable className='mb-5 mb-xl-8' />*/}
             </>
           }
         />
@@ -129,7 +128,7 @@ const ProductionPage: React.FC = () => {
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Production Report</PageTitle>
               {/*<Overview />*/}
-              <ProductionReportTable className='mb-5 mb-xl-8' />
+              <ProductionReportTable />
             </>
           }
         />
@@ -138,7 +137,7 @@ const ProductionPage: React.FC = () => {
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Fuel Report</PageTitle>
-              <FuelReportTable className='mb-5 mb-xl-8' />
+              <FuelReportTable />
             </>
           }
         />
@@ -147,7 +146,7 @@ const ProductionPage: React.FC = () => {
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Equipment KPI</PageTitle>
-              <EquipmentTable className='mb-5 mb-xl-8' />
+              <EquipmentTable />
             </>
           }
         />
@@ -156,7 +155,7 @@ const ProductionPage: React.FC = () => {
           element={
             <>
               <PageTitle breadcrumbs={accountBreadCrumbs}>Activity Statistics</PageTitle>
-              <StatisticsTable className='mb-5 mb-xl-8' />
+              <StatisticsTable />
             </>
           }
         />
