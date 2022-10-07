@@ -23,7 +23,7 @@ const FuelReportTable = () => (
   <QueryRequestProvider>
     <QueryResponseProvider>
       <ListViewProvider>
-        <CycleDetailsList />
+        {/*<CycleDetailsList />*/}
       </ListViewProvider>
     </QueryResponseProvider>
   </QueryRequestProvider>

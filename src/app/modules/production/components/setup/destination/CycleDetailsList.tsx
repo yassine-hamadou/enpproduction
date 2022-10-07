@@ -19,7 +19,7 @@ const CycleDetailsList = () => {
   )
 }
 
-const CycleDetailsWrapper = () => (
+const Destination = () => (
   <QueryRequestProvider>
     <QueryResponseProvider>
       <ListViewProvider>
@@ -29,4 +29,4 @@ const CycleDetailsWrapper = () => (
   </QueryRequestProvider>
 )
 
-export {CycleDetailsWrapper}
+export {Destination}

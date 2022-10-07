@@ -14,8 +14,9 @@ const CustomRow: FC<Props> = ({row}) => (
       return (
         <td
           {...cell.getCellProps()}
-          className={clsx({'text-end min-w-100px': cell.column.id === 'actions'})}
+          className={clsx('text-start min-w-100px border-end')}
         >
+          {/*{'text-start min-w-100px': cell.column.id === 'actions'} // if i want to apply a custom class to cell*/}
           {cell.render('Cell')}
         </td>
       )

@@ -86,8 +86,8 @@ export function AsideMenuMain() {
         <AsideMenuItem to='/production/setup/origin' title='Origin' hasBullet={true} />
         <AsideMenuItem to='/production/setup/destination' title='Destination' hasBullet={true} />
         <AsideMenuItemWithSub to='#' title='Material' hasBullet={true}>
-          <AsideMenuItem to='/production/setup/raw' title='Raw' hasBullet={true} />
-          <AsideMenuItem to='/production/setup/processed' title='Processed' hasBullet={true} />
+          <AsideMenuItem to='/production/setup/raw-material' title='Raw' hasBullet={true} />
+          <AsideMenuItem to='/production/setup/processed-material' title='Processed' hasBullet={true} />
         </AsideMenuItemWithSub>
         <AsideMenuItem to='/production/setup/activity' title='Activity' hasBullet={true} />
         <AsideMenuItem to='/production/setup/shift' title='Shift' hasBullet={true} />

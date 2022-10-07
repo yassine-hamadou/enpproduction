@@ -2,7 +2,7 @@
     "name": "enp-production",
     "version": "8.1.0",
     "private": true,
-    "homepage": "http://208.117.44.15/enp-production",
+    "homepage": "/enp-prod/",
     "dependencies": {
         "@formatjs/intl-pluralrules": "4.3.3",
         "@formatjs/intl-relativetimeformat": "10.0.1",

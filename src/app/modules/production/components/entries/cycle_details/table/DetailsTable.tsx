@@ -35,7 +35,7 @@ const DetailsTable = () => {
             </tr>
           </thead>
           <tbody className='text-black' {...getTableBodyProps()}>
-            {rows.length > 0 ? (
+            {rows.length === 0 ? ( // TODO: change to < 0
               rows.map((row: Row<User>, i) => {
                 prepareRow(row)
                 return <CustomRow row={row} key={`row-${i}-${row.id}`} />

@@ -2,14 +2,23 @@ import React from 'react'
 import {Navigate, Route, Routes, Outlet} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_metronic/layout/core'
 import {CycleDetailsWrapper} from './components/entries/cycle_details/CycleDetailsList'
-import {HaulerTable} from "./components/tables/setup/HaulerTable";
-import {LoaderTable} from "./components/tables/setup/LoaderTable";
 import {CycleGradeWrapper} from "./components/entries/cycle_grades/CycleDetailsList";
 import {PlannedOutputTable} from "./components/entries/planned_output/CycleDetailsList";
 import {ProductionReportTable} from "./components/report/production_table/CycleDetailsList";
 import {FuelReportTable} from "./components/report/fuel/CycleDetailsList";
 import {EquipmentTable} from "./components/report/equipment/CycleDetailsList";
 import {StatisticsTable} from "./components/report/activity/CycleDetailsList";
+import {LoaderOperator} from "./components/setup/loaderOperator/CycleDetailsList";
+import {LoaderUnit} from "./components/setup/loaderUnit/CycleDetailsList";
+import {HaulerOperator} from "./components/setup/haulerOperator/CycleDetailsList";
+import {HaulerUnit} from "./components/setup/haulerUnit/CycleDetailsList";
+import {MineArea} from "./components/setup/mine_care/CycleDetailsList";
+import {Origin} from "./components/setup/origin/CycleDetailsList";
+import {Destination} from "./components/setup/destination/CycleDetailsList";
+import {MaterialRaw} from "./components/setup/materialRaw/CycleDetailsList";
+import {ProcessedMaterial} from "./components/setup/materialProcessed/CycleDetailsList";
+import {Activity} from "./components/setup/activity/CycleDetailsList";
+import {Shift} from "./components/setup/shift/CycleDetailsList";
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
@@ -84,21 +93,40 @@ const ProductionPage: React.FC = () => {
         }
       >
         <Route
-          path='loader'
+          path='loader/operator'
           element={
             <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Loader Operator</PageTitle>
               {/*<Overview />*/}
-              <LoaderTable className='mb-5 mb-xl-8' />
+              <LoaderOperator />
             </>
           }
         />
         <Route
-          path='hauler'
+          path='loader/unit'
           element={
             <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Cycle Grade</PageTitle>
-              <HaulerTable className='mb-5 mb-xl-8' />
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Loader Unit</PageTitle>
+              {/*<Overview />*/}
+              <LoaderUnit />
+            </>
+          }
+        />
+        <Route
+          path='hauler/operator'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Hauler Operator</PageTitle>
+              <HaulerOperator />
+            </>
+          }
+        />
+        <Route
+          path='hauler/unit'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Hauler Unit</PageTitle>
+              <HaulerUnit />
             </>
           }
         />
@@ -106,8 +134,62 @@ const ProductionPage: React.FC = () => {
           path='mine-area'
           element={
             <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Planned Output</PageTitle>
-              {/*<PlannedOutputTable className='mb-5 mb-xl-8' />*/}
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Mine Area</PageTitle>
+              <MineArea />
+            </>
+          }
+        />
+        <Route
+          path='origin'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Origin</PageTitle>
+              <Origin />
+            </>
+          }
+        />
+        <Route
+          path='destination'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Destination</PageTitle>
+              <Destination/>
+            </>
+          }
+        />
+        <Route
+          path='raw-material'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Raw Material</PageTitle>
+              <MaterialRaw />
+            </>
+          }
+        />
+        <Route
+          path='processed-material'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Processed Material</PageTitle>
+              <ProcessedMaterial />
+            </>
+          }
+        />
+        <Route
+          path='activity'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Activity</PageTitle>
+              <Activity />
+            </>
+          }
+        />
+        <Route
+          path='shift'
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Shift</PageTitle>
+              <Shift />
             </>
           }
         />

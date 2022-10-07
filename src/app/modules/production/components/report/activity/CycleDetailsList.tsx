@@ -23,7 +23,7 @@ const StatisticsTable = () => (
   <QueryRequestProvider>
     <QueryResponseProvider>
       <ListViewProvider>
-        <CycleDetailsList />
+        {/*<CycleDetailsList />*/}
       </ListViewProvider>
     </QueryResponseProvider>
   </QueryRequestProvider>

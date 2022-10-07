@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC, useEffect} from 'react'
+import React, {FC, useEffect} from 'react'
 import {useMutation, useQueryClient} from 'react-query'
 import {MenuComponent} from '../../../../../../../../_metronic/assets/ts/components'
 import {ID, KTSVG, QUERIES} from '../../../../../../../../_metronic/helpers'
@@ -35,41 +35,29 @@ const UserActionsCell: FC<Props> = ({id}) => {
 
   return (
     <>
-      <a
-        href='#'
-        className='btn btn-light btn-active-light-primary btn-sm'
-        data-kt-menu-trigger='click'
-        data-kt-menu-placement='bottom-end'
-      >
-        Actions
-        <KTSVG path='/media/icons/duotune/arrows/arr072.svg' className='svg-icon-5 m-0' />
-      </a>
-      {/* begin::Menu */}
       <div
-        className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4'
+        className='d-flex flex-shrink-0'
         data-kt-menu='true'
       >
-        {/* begin::Menu item */}
-        <div className='menu-item px-3'>
-          <a className='menu-link px-3' onClick={openEditModal}>
-            Edit
-          </a>
-        </div>
-        {/* end::Menu item */}
-
-        {/* begin::Menu item */}
-        <div className='menu-item px-3'>
-          <a
-            className='menu-link px-3'
-            data-kt-users-table-filter='delete_row'
-            onClick={async () => await deleteItem.mutateAsync()}
-          >
-            Delete
-          </a>
-        </div>
-        {/* end::Menu item */}
+        <a
+          href='#'
+          className='btn btn-icon btn-light-warning btn-active-color-white btn-sm me-1'
+          onClick={openEditModal}
+        >
+          <KTSVG path='/media/icons/duotune/art/art005.svg' className='svg-icon-3' />
+        </a>
+        <a
+          href='#'
+          data-kt-users-table-filter='delete_row'
+          className='btn btn-icon btn-light-danger btn-active-color-white btn-sm'
+          onClick={async () => await deleteItem.mutateAsync()}
+        >
+          <KTSVG
+            path='/media/icons/duotune/general/gen027.svg'
+            className='svg-icon-3'
+          />
+        </a>
       </div>
-      {/* end::Menu */}
     </>
   )
 }

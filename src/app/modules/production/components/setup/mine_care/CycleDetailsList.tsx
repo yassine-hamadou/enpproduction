@@ -19,7 +19,7 @@ const CycleDetailsList = () => {
   )
 }
 
-const CycleDetailsWrapper = () => (
+const MineArea = () => (
   <QueryRequestProvider>
     <QueryResponseProvider>
       <ListViewProvider>
@@ -29,4 +29,4 @@ const CycleDetailsWrapper = () => (
   </QueryRequestProvider>
 )
 
-export {CycleDetailsWrapper}
+export {MineArea}

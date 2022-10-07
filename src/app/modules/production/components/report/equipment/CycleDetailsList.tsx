@@ -23,7 +23,7 @@ const EquipmentTable = () => (
   <QueryRequestProvider>
     <QueryResponseProvider>
       <ListViewProvider>
-        <CycleDetailsList />
+        {/*<CycleDetailsList />*/}
       </ListViewProvider>
     </QueryResponseProvider>
   </QueryRequestProvider>
